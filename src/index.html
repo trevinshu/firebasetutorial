@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script type="module" src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <h1>Getting Started with Firebase 9</h1>
+
+    <h2>Firebase Firestore</h2>
+
+    <form class="add" id="add">
+      <label for="title">Title:</label>
+      <br />
+      <input type="text" name="title" required />
+      <br />
+      <label for="author">Author:</label>
+      <br />
+      <input type="text" name="author" required />
+      <br />
+      <br />
+      <button>add a new book</button>
+    </form>
+    <br />
+    <form class="delete" id="delete">
+      <label for="id">Document id:</label>
+      <br />
+      <input type="text" name="id" required />
+      <br />
+      <br />
+      <button>delete a book</button>
+    </form>
+    <br />
+    <form class="update" id="update">
+      <label for="id">Document id:</label>
+      <br />
+      <input type="text" name="id" required />
+      <br />
+      <br />
+      <button>update a book</button>
+    </form>
+    <h2>Firebase Auth</h2>
+
+    <form class="signup" id="signup">
+      <label for="email">email:</label>
+      <br />
+      <input type="email" name="email" />
+      <br />
+      <label for="password">password:</label>
+      <br />
+      <input type="password" name="password" />
+      <br />
+      <br />
+      <button>signup</button>
+    </form>
+    <br />
+    <form class="login" id="login">
+      <label for="email">email:</label>
+      <br />
+      <input type="email" name="email" />
+      <br />
+      <label for="password">password:</label>
+      <br />
+      <input type="password" name="password" />
+      <br />
+      <br />
+      <button>login</button>
+    </form>
+    <br />
+    <button class="logout" id="logout">logout</button>
+    <br />
+    <br />
+    <button class="unsub" id="unsub">unsubscribe from db/auth changes</button>
+  </body>
+</html>
